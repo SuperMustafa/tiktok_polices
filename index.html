@@ -25,9 +25,11 @@
 
     .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:28px}
     .card{background:var(--card);border-radius:16px;padding:28px;box-shadow:0 6px 28px rgba(15,39,74,0.06)}
-    .cta{display:flex;gap:12px;margin-top:20px}
-    .btn{background:var(--accent);color:white;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .cta{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:white;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:600;text-decoration:none;display:inline-block;text-align:center}
     .btn.alt{background:transparent;color:var(--accent);border:1px solid rgba(15,114,255,0.14)}
+    .btn.tiktok{background:#000;color:#fff}
+    .btn.tiktok:hover{background:#ff0050}
 
     .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
     .feature{padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(15,114,255,0.04),rgba(0,194,255,0.02));border:1px solid rgba(15,114,255,0.03)}
@@ -88,6 +90,7 @@
           <div class="meta">Suitable for real estate teams who want to convert TikTok engagement into leads and view activity in one place.</div>
 
           <div class="cta">
+            <a href="https://www.tiktok.com/login" target="_blank" class="btn tiktok">Login with TikTok</a>
             <button class="btn">Get started</button>
             <button class="btn alt" onclick="document.getElementById('contact').scrollIntoView()">Contact us</button>
           </div>
